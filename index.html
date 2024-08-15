@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Your Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src="Assets/logo.png" alt="Spotify" />Spotify
+        </li>
+        <li>Music</li>
+        <li>Podcast</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songlist">
+        <h1>Best of NCS</h1>
+        <div class="songitemcontainer">
+          <div class="songitem">
+            <img src="Assets/covers/1.jpg" alt="1" />
+            <span class="songName">Bad</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:34
+                <i id="0" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+          <div class="songitem">
+            <img src="Assets/covers/2.jpg" alt="2" />
+            <span class="songName">Water and Wine</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:34
+                <i id="1" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+          <div class="songitem">
+            <img src="Assets/covers/3.jpg" alt="3" />
+            <span class="songName">Invincible</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:34
+                <i id="2" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+          <div class="songitem">
+            <img src="Assets/covers/4.jpg" alt="4" />
+            <span class="songName">My Heart</span>
+            <span class="songlistplay"
+              ><span class="timestamp"
+                >05:34
+                <i id="3" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        min="0"
+        value="0"
+        max="100"
+      />
+      <div class="icons">
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-3x fa-step-forward" id="next"></i>
+      </div>
+      <div class="songinfo">
+        <img src="Assets/playing.gif" width="45px" alt="" id="gif" /><span
+          id="masterSongName"
+          >Bad</span
+        >
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/26504e4a1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
